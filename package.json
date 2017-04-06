@@ -1,0 +1,23 @@
+{
+  "name": "bot-player",
+  "version": "1.0.0",
+  "description": "Texas hold'em poker bot player",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.14.0",
+    "typescript": "2.2.2",
+    "body-parser": "1.15.2"
+  },
+  "engines": {
+    "node": "7.8.0"
+  },
+  "scripts": {
+    "compile": "tsc ./player.ts ",
+    "postinstall": "npm run compile",
+    "prestart": "npm run compile",
+    "start": "node index"
+  },
+  "devDependencies": {
+    "@types/node": "6.0.45"
+  }
+}
